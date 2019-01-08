@@ -28,4 +28,11 @@ class Transaksi_energi extends MY_Controller
 		$this->data['content']	= 'tambah_target_operasi';
 		$this->template($this->data, $this->module);
 	}
+
+	public function edit_target_operasi()
+	{
+		$this->data['title']	= 'Edit Target Operasi';
+		$this->data['content']	= 'edit_target_operasi';
+		$this->template($this->data, $this->module);
+	}
 }
