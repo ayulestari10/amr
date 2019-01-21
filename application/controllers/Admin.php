@@ -1,11 +1,29 @@
 <?php 
 
-class Pelanggan extends MY_Controller
+class Admin extends MY_Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->module = 'pelanggan';
+		$this->data['id_role']	= $this->session->userdata('id_role');
+		if (!isset($this->data['id_role']) or $this->data['id_role'] != 1)
+		{
+			$this->session->sess_destroy();
+			redirect('login');
+		}
+
+		$this->module = 'admin';
+		
+		$this->data['id_pengguna'] 	= $this->session->userdata('id_pengguna');
+		$this->data['username']		= $this->session->userdata('username');
+
+		$this->load->model('Pengguna_m');
+		$this->data['pengguna'] = Pengguna_m::find($this->data['id_pengguna']);
+		if (!isset($this->data['pengguna']))
+		{
+			$this->session->sess_destroy();
+			redirect('login');
+		}
 	}
 
 

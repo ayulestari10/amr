@@ -1,6 +1,6 @@
 <?php
 
-class Logout extends MY_Controller
+class Logout extends CI_Controller
 {
 	public function __construct()
 	{
@@ -11,6 +11,5 @@ class Logout extends MY_Controller
 	{
 		$this->session->sess_destroy();
 		redirect('login');
-		exit;
 	}
 }

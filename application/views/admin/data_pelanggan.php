@@ -24,7 +24,7 @@
 	<div class="page-head">
 		<!-- BEGIN PAGE TITLE -->
 		<div class="page-title">
-			<h1>Data Pelanggan</h1>
+			<h1>Pelanggan</h1>
 		</div>
 		<!-- END PAGE TITLE -->
 	</div>
@@ -36,14 +36,14 @@
 			<div class="portlet box grey-cascade">
 				<div class="portlet-title">
 					<div class="caption">
-						<i class="fa fa-globe"></i>
+						<i class="fa fa-globe"></i> Data Pelanggan
 					</div>
 				</div>
 				<div class="portlet-body">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="btn-group">
-								<a href="<?= base_url('pelanggan/tambah-pelanggan') ?>" id="sample_editable_1_new" class="btn green"> <i class="fa fa-plus"></i> Tambah</a>
+								<a href="<?= base_url('admin/tambah-pelanggan') ?>" id="sample_editable_1_new" class="btn green"> <i class="fa fa-plus"></i> Tambah</a>
 							</div>
 						</div>
 						<div class="col-md-12" style="margin-top: 3%;">
@@ -107,10 +107,10 @@
 											</td>
 											<td>
 												<div class="btn-group btn-group-solid">
-													<a href="<?= base_url('pelanggan/edit-pelanggan') ?>" class="btn blue btn-sm"><i class="fa fa-edit"></i> Edit</a>
-													<a href="<?= base_url('pelanggan/detail-pelanggan') ?>" class="btn green btn-sm"><i class="fa fa-eye"></i> Detail</a>
+													<a href="<?= base_url('admin/edit-pelanggan') ?>" class="btn blue btn-sm"><i class="fa fa-edit"></i> Edit</a>
+													<a href="<?= base_url('admin/detail-pelanggan') ?>" class="btn green btn-sm"><i class="fa fa-eye"></i> Detail</a>
 
-													<a href="<?= base_url('pelanggan/hapus-pelanggan') ?>" class="btn red btn-sm"><i class="fa fa-trash"></i> Hapus</a>
+													<a href="<?= base_url('admin/hapus-pelanggan') ?>" class="btn red btn-sm"><i class="fa fa-trash"></i> Hapus</a>
 												</div>
 											</td>
 										</tr>

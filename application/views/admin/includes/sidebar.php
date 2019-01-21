@@ -12,23 +12,17 @@
             <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
             <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
                 <li>
-                    <a href="<?= base_url('pelanggan') ?>">
+                    <a href="<?= base_url('admin') ?>">
                         <i class="icon-home"></i>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('pelanggan/data-pelanggan') ?>">
+                    <a href="<?= base_url('admin/data-pelanggan') ?>">
                         <i class="icon-list"></i>
                         <span class="title">Data Pelanggan</span>
                     </a>
                 </li>
-                <!-- <li>
-                    <a href="<?= base_url('pelanggan/kriteria') ?>">
-                        <i class="icon-list"></i>
-                        <span class="title">Daftar Kriteria</span>
-                    </a>
-                </li> -->
             </ul>
             <!-- END SIDEBAR MENU -->
         </div>
