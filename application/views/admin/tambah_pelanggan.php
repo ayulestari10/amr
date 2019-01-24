@@ -15,8 +15,8 @@
 			<div class="portlet box blue" id="form_wizard_1">
 				<div class="portlet-title">
 					<div class="caption">
-						<i class="fa fa-gift"></i> Form Wizard - <span class="step-title">
-						Step 1 of 4 </span>
+						<i class="fa fa-gift"></i> Tambah Pengguna - <span class="step-title">
+						Step 1 of 6 </span>
 					</div>
 					<div class="tools hidden-xs">
 						<a href="javascript:;" class="collapse">
@@ -88,6 +88,8 @@
 									</div>
 								</div>
 								<div class="tab-content">
+									<div><?= $this->session->flashdata('msg') ?></div>
+
 									<div class="alert alert-danger display-none">
 										<button class="close" data-dismiss="alert"></button>
 										You have some form errors. Please check below.
@@ -97,7 +99,8 @@
 										Your form validation is successful!
 									</div>
 									<div class="tab-pane active" id="tab1">
-										<h3 class="block">Provide your account details</h3>
+										<h3 class="block">Tambah Data Pengguna</h3>
+										<hr>
 										<div class="form-group">
 											<label class="control-label col-md-3">Username <span class="required">
 											* </span>
@@ -105,7 +108,7 @@
 											<div class="col-md-4">
 												<input type="text" class="form-control" name="username"/>
 												<span class="help-block">
-												Provide your username </span>
+												Username </span>
 											</div>
 										</div>
 										<div class="form-group">
@@ -114,256 +117,193 @@
 											</label>
 											<div class="col-md-4">
 												<input type="password" class="form-control" name="password" id="submit_form_password"/>
-												<span class="help-block">
-												Provide your password. </span>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Confirm Password <span class="required">
+											<label class="control-label col-md-3">Konfirmasi Password <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
 												<input type="password" class="form-control" name="rpassword"/>
-												<span class="help-block">
-												Confirm your password </span>
 											</div>
 										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Email <span class="required">
-											* </span>
-											</label>
-											<div class="col-md-4">
-												<input type="text" class="form-control" name="email"/>
-												<span class="help-block">
-												Provide your email address </span>
+
+										<hr>
+										<h3 class="block">Tambah Data Pelanggan</h3>
+										<hr>		
+									
+										<div class="row form-horizontal">
+											<div class="form-body">
+												<div class="form-group">
+													<label class="col-md-3 control-label">SIM Card</label>
+													<div class="col-md-4">
+														<input type="text" name="" class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">Nomor Modem</label>
+													<div class="col-md-4">
+														<input type="text" name="" class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">Nomor Meter</label>
+													<div class="col-md-4">
+														<input type="text" name="" class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">Nama</label>
+													<div class="col-md-4">
+														<input type="text" name="" class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">Alamat</label>
+													<div class="col-md-4">
+														<textarea name="" class="form-control"></textarea>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">Tarif</label>
+													<div class="col-md-4">
+														<input type="text" name="" class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-3 control-label">Daya</label>
+													<div class="col-md-4">
+														<input type="text" name="" class="form-control"/>
+													</div>
+												</div>
 											</div>
 										</div>
+									<!-- END FORM-->
+
 									</div>
 									<div class="tab-pane" id="tab2">
-										<h3 class="block">Provide your profile details</h3>
+										<h3 class="block">Tambah Data Meter</h3>
 										<div class="form-group">
-											<label class="control-label col-md-3">Fullname <span class="required">
+											<label class="control-label col-md-3">Merk <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="fullname"/>
-												<span class="help-block">
-												Provide your fullname </span>
+												<input type="text" class="form-control" name="merk"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Phone Number <span class="required">
+											<label class="control-label col-md-3">Tahun Buat <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="phone"/>
-												<span class="help-block">
-												Provide your phone number </span>
+												<input type="number" class="form-control" name="tahun_buat"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Gender <span class="required">
+											<label class="control-label col-md-3">Latitude <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<div class="radio-list">
-													<label>
-													<input type="radio" name="gender" value="M" data-title="Male"/>
-													Male </label>
-													<label>
-													<input type="radio" name="gender" value="F" data-title="Female"/>
-													Female </label>
-												</div>
-												<div id="form_gender_error">
-												</div>
+												<input type="number" class="form-control" name="latitude"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Address <span class="required">
+											<label class="control-label col-md-3">Longitude <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="address"/>
-												<span class="help-block">
-												Provide your street address </span>
+												<input type="number" class="form-control" name="longitude"/>
 											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">City/Town <span class="required">
-											* </span>
-											</label>
-											<div class="col-md-4">
-												<input type="text" class="form-control" name="city"/>
-												<span class="help-block">
-												Provide your city or town </span>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Remarks</label>
-											<div class="col-md-4">
-												<textarea class="form-control" rows="3" name="remarks"></textarea>
-											</div>
-										</div>
+										</div>	
 									</div>
+
+
 									<div class="tab-pane" id="tab3">
-										<h3 class="block">Provide your billing and credit card details</h3>
+										<h3 class="block">Tambah Data Modem</h3>
 										<div class="form-group">
-											<label class="control-label col-md-3">Card Holder Name <span class="required">
+											<label class="control-label col-md-3">IMEI <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="card_name"/>
-												<span class="help-block">
-												</span>
+												<input type="text" class="form-control" name="imei"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Card Number <span class="required">
+											<label class="control-label col-md-3">Merk<span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" class="form-control" name="card_number"/>
-												<span class="help-block">
-												</span>
+												<input type="text" class="form-control" name="merk"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">CVC <span class="required">
+											<label class="control-label col-md-3">Tipe <span class="required">
 											* </span>
 											</label>
 											<div class="col-md-4">
-												<input type="text" placeholder="" class="form-control" name="card_cvc"/>
-												<span class="help-block">
-												</span>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Expiration(MM/YYYY) <span class="required">
-											* </span>
-											</label>
-											<div class="col-md-4">
-												<input type="text" placeholder="MM/YYYY" maxlength="7" class="form-control" name="card_expiry_date"/>
-												<span class="help-block">
-												e.g 11/2020 </span>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Payment Options <span class="required">
-											* </span>
-											</label>
-											<div class="col-md-4">
-												<div class="checkbox-list">
-													<label>
-													<input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card."/> Auto-Pay with this Credit Card </label>
-													<label>
-													<input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing."/> Email me monthly billing </label>
-												</div>
-												<div id="form_payment_error">
-												</div>
+												<input type="text" class="form-control" name="tipe"/>
 											</div>
 										</div>
 									</div>
+
+
 									<div class="tab-pane" id="tab4">
-										<h3 class="block">Confirm your account</h3>
-										<h4 class="form-section">Account</h4>
+										<h3 class="block">Tambah Data SIM Card</h3>
 										<div class="form-group">
-											<label class="control-label col-md-3">Username:</label>
+											<label class="control-label col-md-3">Nomor SIM Card<span class="required">
+											* </span>
+											</label>
 											<div class="col-md-4">
-												<p class="form-control-static" data-display="username">
-												</p>
+												<input type="text" class="form-control" name="no_sim_card"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Email:</label>
+											<label class="control-label col-md-3">Provider<span class="required">
+											* </span>
+											</label>
 											<div class="col-md-4">
-												<p class="form-control-static" data-display="email">
-												</p>
+												<input type="text" class="form-control" name="provider"/>
 											</div>
 										</div>
-										<h4 class="form-section">Profile</h4>
+									</div>
+
+									<div class="tab-pane" id="tab5">
+										<h3 class="block">Tambah Data Pembatas Arus</h3>
 										<div class="form-group">
-											<label class="control-label col-md-3">Fullname:</label>
+											<label class="control-label col-md-3">Merk<span class="required">
+											* </span>
+											</label>
 											<div class="col-md-4">
-												<p class="form-control-static" data-display="fullname">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Gender:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="gender">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Phone:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="phone">
-												</p>
+												<input type="text" class="form-control" name="merk_pembatas_arus"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">Address:</label>
+											<label class="control-label col-md-3">Tipe<span class="required">
+											* </span>
+											</label>
 											<div class="col-md-4">
-												<p class="form-control-static" data-display="address">
-												</p>
+												<input type="text" class="form-control" name="tipe_pembatas_arus"/>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">City/Town:</label>
+											<label class="control-label col-md-3">Arus<span class="required">
+											* </span>
+											</label>
 											<div class="col-md-4">
-												<p class="form-control-static" data-display="city">
-												</p>
+												<input type="text" class="form-control" name="arus"/>
 											</div>
 										</div>
+									</div>
+
+
+									<div class="tab-pane" id="tab6">
+										<h3 class="block">Tambah Data CT</h3>
 										<div class="form-group">
-											<label class="control-label col-md-3">Country:</label>
+											<label class="control-label col-md-3">Jenis<span class="required">
+											* </span>
+											</label>
 											<div class="col-md-4">
-												<p class="form-control-static" data-display="country">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Remarks:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="remarks">
-												</p>
-											</div>
-										</div>
-										<h4 class="form-section">Billing</h4>
-										<div class="form-group">
-											<label class="control-label col-md-3">Card Holder Name:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="card_name">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Card Number:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="card_number">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">CVC:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="card_cvc">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Expiration:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="card_expiry_date">
-												</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3">Payment Options:</label>
-											<div class="col-md-4">
-												<p class="form-control-static" data-display="payment">
-												</p>
+												<input type="text" class="form-control" name="jenis_ct"/>
 											</div>
 										</div>
 									</div>
@@ -389,7 +329,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row margin-top-10">
+	<!-- <div class="row margin-top-10">
 		<div class="col-md-12">
 			<div class="portlet box green">
 				<div class="portlet-title">
@@ -398,66 +338,11 @@
 					</div>
 				</div>
 				<div class="portlet-body form">
-					<!-- BEGIN FORM-->
-					<?= form_open_multipart('pelanggan/tambah-pelanggan', ['class' => 'form-horizontal']) ?>
-						<div class="form-body">
-							<?= $this->session->flashdata('msg') ?>
-							<div class="form-group">
-								<label class="col-md-3 control-label">SIM Card</label>
-								<div class="col-md-4">
-									<input type="text" name="" class="form-control"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Nomor Modem</label>
-								<div class="col-md-4">
-									<input type="text" name="" class="form-control"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Nomor Meter</label>
-								<div class="col-md-4">
-									<input type="text" name="" class="form-control"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Nama</label>
-								<div class="col-md-4">
-									<input type="text" name="" class="form-control"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Alamat</label>
-								<div class="col-md-4">
-									<textarea name="" class="form-control"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Tarif</label>
-								<div class="col-md-4">
-									<input type="text" name="" class="form-control"/>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Daya</label>
-								<div class="col-md-4">
-									<input type="text" name="" class="form-control"/>
-								</div>
-							</div>
-						</div>
-						<div class="form-actions">
-							<div class="row">
-								<div class="col-md-offset-3 col-md-9">
-									<button type="submit" name="submit" value="Submit" class="btn btn-circle blue">Submit</button>
-								</div>
-							</div>
-						</div>
-					<?= form_close() ?>
-					<!-- END FORM-->
+					
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- END PAGE CONTENT INNER -->
 </div>
 
