@@ -38,7 +38,7 @@
 										<a href="#tab1" data-toggle="tab" class="step">
 										<span class="number">
 										1 </span>
-										<span class="desc">
+										<span class="desc" style="display: block !important;">
 										<i class="fa fa-check"></i> Data Pelanggan </span>
 										</a>
 									</li>
@@ -46,15 +46,15 @@
 										<a href="#tab2" data-toggle="tab" class="step">
 										<span class="number">
 										2 </span>
-										<span class="desc">
-										<i class="fa fa-check"></i> Meter </span>
+										<span class="desc" style="display: block !important;">
+										<i class="fa fa-check"></i>  Meter </span>
 										</a>
 									</li>
 									<li>
 										<a href="#tab3" data-toggle="tab" class="step active">
 										<span class="number">
 										3 </span>
-										<span class="desc">
+										<span class="desc" style="display: block !important;">
 										<i class="fa fa-check"></i> Modem </span>
 										</a>
 									</li>
@@ -62,7 +62,7 @@
 										<a href="#tab4" data-toggle="tab" class="step">
 										<span class="number">
 										4 </span>
-										<span class="desc">
+										<span class="desc" style="display: block !important;">
 										<i class="fa fa-check"></i> SIM Card </span>
 										</a>
 									</li>
@@ -70,7 +70,7 @@
 										<a href="#tab5" data-toggle="tab" class="step">
 										<span class="number">
 										5 </span>
-										<span class="desc">
+										<span class="desc" style="display: block !important;">
 										<i class="fa fa-check"></i> Pembatas Arus </span>
 										</a>
 									</li>
@@ -78,8 +78,8 @@
 										<a href="#tab6" data-toggle="tab" class="step">
 										<span class="number">
 										6 </span>
-										<span class="desc">
-										<i class="fa fa-check"></i> CT </span>
+										<span class="desc" style="display: block !important;">
+										<i class="fa fa-check"></i>CT </span>
 										</a>
 									</li>
 								</ul>
