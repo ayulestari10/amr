@@ -23,6 +23,24 @@
                         <span class="title">Data Pelanggan</span>
                     </a>
                 </li>
+                <li>
+                    <a href="<?= base_url('admin/berita-acara') ?>">
+                        <i class="icon-list"></i>
+                        <span class="title">Berita Acara</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('admin/realisasi') ?>">
+                        <i class="icon-list"></i>
+                        <span class="title">Realisasi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('admin/data-geotag') ?>">
+                        <i class="icon-list"></i>
+                        <span class="title">Data Geotag</span>
+                    </a>
+                </li>
             </ul>
             <!-- END SIDEBAR MENU -->
         </div>

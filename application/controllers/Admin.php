@@ -62,4 +62,51 @@ class Admin extends MY_Controller
 		$this->template($this->data, $this->module);
 	}
 
+	public function berita_acara(){
+		$this->data['title']	= 'Berita Acara';
+		$this->data['content']	= 'berita_acara';
+		$this->template($this->data, $this->module);
+	}
+
+	public function realisasi(){
+		$this->data['title']	= 'Realisasi';
+		$this->data['content']	= 'data_realisasi';
+		$this->template($this->data, $this->module);
+	}
+
+	public function detail_realisasi(){
+		$this->data['title']	= 'Detail Realisasi';
+		$this->data['content']	= 'detail_realisasi';
+		$this->template($this->data, $this->module);
+	}
+	
+	public function edit_realisasi(){
+		$this->data['title']	= 'Edit Realisasi';
+		$this->data['content']	= 'edit_realisasi';
+		$this->template($this->data, $this->module);
+	}
+
+	public function tambah_realisasi(){
+		$this->data['title']	= 'Tambah Realisasi';
+		$this->data['content']	= 'tambah_realisasi';
+		$this->template($this->data, $this->module);
+	}
+
+	public function data_geotag(){
+		$this->data['title']	= 'Data Geotag';
+		$this->data['content']	= 'data_geotag';
+		$this->template($this->data, $this->module);
+	}
+	
+	public function tambah_geotag(){
+		$this->data['title']	= 'Tambah Geotag';
+		$this->data['content']	= 'tambah_geotag';
+		$this->template($this->data, $this->module);
+	}	
+
+	public function edit_geotag(){
+		$this->data['title']	= 'Edit Geotag';
+		$this->data['content']	= 'edit_geotag';
+		$this->template($this->data, $this->module);
+	}
 }
